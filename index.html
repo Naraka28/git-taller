@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mindful - Medita, Respira, Vive</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-20px);
+        }
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .animate-float {
+        animation: float 6s ease-in-out infinite;
+      }
+      .animate-fadeIn {
+        animation: fadeIn 1s ease-out forwards;
+      }
+      .gradient-bg {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      }
+      .glass-effect {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+      }
+    </style>
+  </head>
+  <body class="bg-gradient-to-br from-purple-50 to-blue-50">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-effect">
+      <div class="max-w-7xl mx-auto px-6 py-4">
+        <div class="flex justify-between items-center">
+          <div class="text-2xl font-bold text-purple-600">✨ Mindful</div>
+          <div class="hidden md:flex space-x-8">
+            <a
+              href="#features"
+              class="text-gray-700 hover:text-purple-600 transition"
+              >Características</a
+            >
+            <a
+              href="#benefits"
+              class="text-gray-700 hover:text-purple-600 transition"
+              >Beneficios</a
+            >
+            <a
+              href="#pricing"
+              class="text-gray-700 hover:text-purple-600 transition"
+              >Precios</a
+            >
+          </div>
+          <button
+            class="bg-purple-600 text-white px-6 py-2 rounded-full hover:bg-purple-700 transition"
+          >
+            Comenzar
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-6">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div class="animate-fadeIn">
+            <h1 class="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
+              Encuentra tu
+              <span class="gradient-bg bg-clip-text text-transparent"
+                >paz interior</span
+              >
+            </h1>
+            <p class="text-xl text-gray-600 mb-8">
+              Meditaciones guiadas, ejercicios de respiración y música relajante
+              para transformar tu día a día.
+            </p>
+            <div class="flex gap-4">
+              <button
+                class="bg-purple-600 text-white px-8 py-4 rounded-full text-lg hover:bg-purple-700 transition transform hover:scale-105"
+              >
+                Prueba gratis 7 días
+              </button>
+              <button
+                class="border-2 border-purple-600 text-purple-600 px-8 py-4 rounded-full text-lg hover:bg-purple-50 transition"
+              >
+                Ver demo
+              </button>
+            </div>
+            <p class="text-sm text-gray-500 mt-4">
+              No se requiere tarjeta de crédito
+            </p>
+          </div>
+          <div class="animate-float">
+            <div class="relative">
+              <div
+                class="absolute inset-0 gradient-bg rounded-3xl blur-3xl opacity-30"
+              ></div>
+              <div class="relative bg-white rounded-3xl shadow-2xl p-8">
+                <div class="space-y-6">
+                  <div class="flex items-center gap-4">
+                    <div
+                      class="w-16 h-16 rounded-full bg-purple-100 flex items-center justify-center text-2xl"
+                    >
+                      🧘‍♀️
+                    </div>
+                    <div>
+                      <div class="font-semibold text-gray-900">
+                        Meditación matutina
+                      </div>
+                      <div class="text-sm text-gray-500">
+                        10 min • Principiante
+                      </div>
+                    </div>
+                  </div>
+                  <div class="h-2 bg-gray-200 rounded-full overflow-hidden">
+                    <div
+                      class="h-full bg-purple-600 rounded-full"
+                      style="width: 70%"
+                    ></div>
+                  </div>
+                  <div class="flex gap-2 justify-center">
+                    <div
+                      class="w-12 h-12 rounded-full bg-purple-100 flex items-center justify-center"
+                    >
+                      ⏮️
+                    </div>
+                    <div
+                      class="w-12 h-12 rounded-full bg-purple-600 flex items-center justify-center text-white"
+                    >
+                      ▶️
+                    </div>
+                    <div
+                      class="w-12 h-12 rounded-full bg-purple-100 flex items-center justify-center"
+                    >
+                      ⏭️
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 px-6 bg-white">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold text-gray-900 mb-4">
+            Todo lo que necesitas
+          </h2>
+          <p class="text-xl text-gray-600">
+            Para tu bienestar mental y emocional
+          </p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="p-8 rounded-2xl hover:shadow-xl transition">
+            <div class="text-5xl mb-4">🎧</div>
+            <h3 class="text-2xl font-bold mb-3">Meditaciones guiadas</h3>
+            <p class="text-gray-600">
+              Más de 500 sesiones para reducir estrés, mejorar el sueño y
+              aumentar tu enfoque.
+            </p>
+          </div>
+          <div class="p-8 rounded-2xl hover:shadow-xl transition">
+            <div class="text-5xl mb-4">🌬️</div>
+            <h3 class="text-2xl font-bold mb-3">Ejercicios de respiración</h3>
+            <p class="text-gray-600">
+              Técnicas probadas para calmar tu mente en momentos de ansiedad o
+              estrés.
+            </p>
+          </div>
+          <div class="p-8 rounded-2xl hover:shadow-xl transition">
+            <div class="text-5xl mb-4">🎵</div>
+            <h3 class="text-2xl font-bold mb-3">Sonidos relajantes</h3>
+            <p class="text-gray-600">
+              Música ambiental, sonidos de la naturaleza y frecuencias
+              binaurales.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-20 px-6 gradient-bg">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-4 gap-8 text-center text-white">
+          <div>
+            <div class="text-5xl font-bold mb-2">2M+</div>
+            <div class="text-purple-200">Usuarios activos</div>
+          </div>
+          <div>
+            <div class="text-5xl font-bold mb-2">500+</div>
+            <div class="text-purple-200">Meditaciones</div>
+          </div>
+          <div>
+            <div class="text-5xl font-bold mb-2">4.9★</div>
+            <div class="text-purple-200">Calificación</div>
+          </div>
+          <div>
+            <div class="text-5xl font-bold mb-2">50K+</div>
+            <div class="text-purple-200">Reseñas</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 px-6">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          Comienza tu viaje hoy
+        </h2>
+        <p class="text-xl text-gray-600 mb-8">
+          Únete a millones de personas que ya transformaron su vida con Mindful
+        </p>
+        <button
+          class="bg-purple-600 text-white px-12 py-5 rounded-full text-xl hover:bg-purple-700 transition transform hover:scale-105 shadow-lg"
+        >
+          Empieza gratis →
+        </button>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 px-6">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-4 gap-8 mb-8">
+          <div>
+            <div class="text-2xl font-bold mb-4">✨ Mindful</div>
+            <p class="text-gray-400">Tu compañero diario de bienestar</p>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-4">Producto</h4>
+            <div class="space-y-2 text-gray-400">
+              <div>Características</div>
+              <div>Precios</div>
+              <div>Descargar app</div>
+            </div>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-4">Compañía</h4>
+            <div class="space-y-2 text-gray-400">
+              <div>Sobre nosotros</div>
+              <div>Blog</div>
+              <div>Carreras</div>
+            </div>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-4">Legal</h4>
+            <div class="space-y-2 text-gray-400">
+              <div>Privacidad</div>
+              <div>Términos</div>
+              <div>Contacto</div>
+            </div>
+          </div>
+        </div>
+        <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+          © 2025 Mindful. Todos los derechos reservados.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
